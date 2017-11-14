@@ -136,6 +136,9 @@ public class LocationManager extends CordovaPlugin implements BeaconConsumer {
 
         Log.i(TAG, "Determined config value FOREGROUND_SCAN_PERIOD: " +
                 String.valueOf(foregroundScanPeriod));
+        
+        Log.i(TAG, "Determined config value BACKGROUND_BETWEEN_SCAN_PERIOD: " +
+                String.valueOf(backgroundBetweenScanPeriod));
 
         iBeaconManager = BeaconManager.getInstanceForApplication(cordovaActivity);
         iBeaconManager.setForegroundBetweenScanPeriod(foregroundBetweenScanPeriod);
